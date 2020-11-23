@@ -4,8 +4,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-
-	/*border: 1px solid red;*/
+	/* border: 1px solid red; */
 }
 body {
 	font-family: 'Myriad Pro', sans-serif;
@@ -2171,6 +2170,13 @@ ul, ol {list-style-type: none;}
 		margin: 10px 0;
 		padding: 0;
 	}
-	
+}
 
+@media screen and (max-width: 300px) {
+	.wrapper {
+		max-width: 300px;
+	}
+	.container {
+		max-width: 280px;
+	}
 }
