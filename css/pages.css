@@ -74,8 +74,21 @@
 		.sitemap__nested-item {
 			font-size: 12pt;
 		}
+		.sitemap__link {
+			border: 0;
+		}
 }
-
+@media screen and (max-width: 300px) {
+		.sitemap__wrapper {
+			width: 85%;
+		}
+		.sitemap__item {
+			font-size: 12pt;
+		}
+		.sitemap__nested-item {
+			font-size: 10pt;
+		}
+}
 
 
 
@@ -108,7 +121,7 @@
 	display: flex;
 	align-items: center;
 }
-.breadcrumbs__item {margin: 0 0 0 10px;}
+.breadcrumbs__item {padding: 0 10px 0 0;}
 .breadcrumbs__item::after {
 	content: ">>";
 	color: #0000FF;
@@ -118,8 +131,22 @@
 .breadcrumbs__link {color: #0000FF;}
 .breadcrumbs__link:hover,
 .breadcrumbs__link--active {color: #00A8EE;}
-
-
+@media screen and (max-width: 700px) {
+	.breadcrumbs__list {
+		display: block;
+	}
+	.breadcrumbs__item {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 558px) {
+	
+}
+@media screen and (max-width: 450px) {
+	.breadcrumbs__link {
+		font-size: 10pt;
+	}
+}
 
 
 
@@ -252,9 +279,10 @@
 }
 @media screen and (max-width: 358px) {
 	.file-field-remover {
-		left: 77%;
+		left: 74%;
 	}
 }
+
 .priemnaya-form {
 	display: block;
 	width: 60px;
@@ -316,4 +344,67 @@
 }
 .messages__info span {
 	display: block;
+}
+@media screen and (max-width: 800px) {
+	.messages__caption {
+		font-size: 20px;
+	}
+	.messages__info {
+		font-size: 12pt;
+		padding: 0 0 0 30px;
+	}
+	.reception__messages {
+		width: 85%;
+	}
+}
+@media screen and (max-width: 658px) {
+	.reception__messages {
+		width: 90%;
+	}
+}
+@media screen and (max-width: 558px) {
+	.messages__caption {
+		font-size: 18px;
+	}
+	.messages__info {
+		font-size: 10pt;
+		padding: 0 0 0 30px;
+	}
+	.reception__messages {
+		width: 85%;
+	}
+}
+@media screen and (max-width: 500px) {
+	.reception__messages {
+		width: 95%;
+	}
+}
+@media screen and (max-width: 400px) {
+	.reception__messages {
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+/*=========== Услуги населению ===============*/
+
+
+.service {
+	width: 100%;
+}
+.service__inner {
+	width: 100%;
+	min-height: 300px;
+	padding: 10px;
+	border: 1px solid #119EF7;
+	margin: 20px 0;
 }
