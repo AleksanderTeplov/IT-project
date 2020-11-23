@@ -4,7 +4,8 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	/* border: 1px solid red; */
+
+	/*border: 1px solid red;*/
 }
 body {
 	font-family: 'Myriad Pro', sans-serif;
@@ -2037,23 +2038,22 @@ ul, ol {list-style-type: none;}
 
 	/*-----Секция ссылок-----*/
 	.link {
-		font-size: auto;
-		width: 100%;
+		display: none;
 	}
 	/*----- Секция заголовка -----*/
 	.header__caption_logo {
 		padding: 0;
 	}
 	.logo_top {
-		font-size: 8pt;
+		font-size: 7pt;
 	}
 	.logo_center {
-		font-size: 20pt;
+		font-size: 16pt;
 		margin: 0;
-		line-height: 20px;
+		line-height: 18px;
 	}
 	.logo_bottom {
-		font-size: 10pt;
+		font-size: 8pt;
 	}
 
 	/*	======================
