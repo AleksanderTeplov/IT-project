@@ -4,8 +4,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-
-	/*border: 1px solid red;*/
+	/* border: 1px solid red; */
 }
 body {
 	font-family: 'Myriad Pro', sans-serif;
@@ -2038,22 +2037,23 @@ ul, ol {list-style-type: none;}
 
 	/*-----Секция ссылок-----*/
 	.link {
-		display: none;
+		font-size: auto;
+		width: 100%;
 	}
 	/*----- Секция заголовка -----*/
 	.header__caption_logo {
 		padding: 0;
 	}
 	.logo_top {
-		font-size: 7pt;
+		font-size: 8pt;
 	}
 	.logo_center {
-		font-size: 16pt;
+		font-size: 20pt;
 		margin: 0;
-		line-height: 18px;
+		line-height: 20px;
 	}
 	.logo_bottom {
-		font-size: 8pt;
+		font-size: 10pt;
 	}
 
 	/*	======================
@@ -2178,5 +2178,8 @@ ul, ol {list-style-type: none;}
 	}
 	.container {
 		max-width: 280px;
+	}
+	.table-of-contents__link {
+		font-size: 6pt;
 	}
 }
