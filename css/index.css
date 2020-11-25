@@ -4,10 +4,10 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	/* border: 1px solid red; */
+	 /*border: 1px solid red; */
 }
 body {
-	font-family: 'Myriad Pro', sans-serif;
+	font-family: 'Lato', sans-serif;
 	-moz-user-select: none;
 	user-select: none;
 	background: #f5f7fa;
@@ -566,7 +566,8 @@ ul, ol {list-style-type: none;}
 	display: flex;
 	justify-content: center;
 }
-.table-of-contents__link:hover {
+.table-of-contents__link:hover,
+.footer__nav__link--active {
 	background-color: #4F64FF;
 	color: #fff;
 	transition: .4s;
@@ -1164,12 +1165,15 @@ ul, ol {list-style-type: none;}
 	}
 	.phones__info {
 		font-size: 14pt;
+		line-height: 20px;
 	}
 	.phones__name {
 		width: 50%;
+		text-align: left;
 	}
 	.phones__number {
 		width: 50%;
+		text-align: right;
 	}
 		/*=====================
 	======= ПОДВАЛ ======
@@ -1364,21 +1368,11 @@ ul, ol {list-style-type: none;}
 	.main-news {
 		padding: 10px;
 	}
-	.main-news__title {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-	}
-	.title__round {
-		width: 70px;
-		height: 70px;
-		font-size: 24pt;
-	}
 	.counter {
 		margin: 10px 0;
 	}
 	.title {
-		font-size: 24pt;
+		font-size: 22pt;
 		width: auto;
 		margin: 0 20px;
 	}
@@ -1463,9 +1457,11 @@ ul, ol {list-style-type: none;}
 	 =================*/
 
 	/*-----Секция ссылок-----*/
+	.header__links {
+		padding: 0;
+	}
 	.link {
-		font-size: 8pt;
-		width: 100%;
+		display: none;
 	}
 	/*----- Секция заголовка -----*/
 	.logo_top {
@@ -1545,9 +1541,7 @@ ul, ol {list-style-type: none;}
 		display: block;
 	}
 	.main-news {
-		border-radius: 20px;
-		padding: 30px;
-		width: 100%;
+		
 	}
 	.phones {
 		border-radius: 20px;
@@ -1591,7 +1585,6 @@ ul, ol {list-style-type: none;}
 	}
 	.phones__info {
 		font-size: 14pt;
-		line-height: 35px;
 		border-top: 1px solid #B0B0B0;
 	}
 	.phones__name {
@@ -1668,21 +1661,26 @@ ul, ol {list-style-type: none;}
 	/*=================
 	 ====== ШАПКА =====
 	 =================*/
-
-	/*-----Секция ссылок-----*/
-	.link {
-		font-size: 8pt;
-		width: 100%;
-	}
 	/*----- Секция заголовка -----*/
+	.header__caption_logo {
+		min-height: 0;
+		padding: 0;
+		margin: 0;
+	}
+	.logo {
+		line-height: 25px;
+		min-height: 0;
+	}
 	.logo_top {
 		font-size: 10pt;
+		text-align: center;
 	}
 	.logo_center {
-		font-size: 26pt;
+		font-size: 24pt;
 	}
 	.logo_bottom {
 		font-size: 12pt;
+		text-align: center;
 	}
 
 	/*	======================
@@ -1693,11 +1691,14 @@ ul, ol {list-style-type: none;}
 	.intelligence {
 		font-size: 14pt;
 	}
+	.intelligence__info {
+		font-size: 12pt;
+	}
 	.leader_caption {
-		font-size: 19pt;
+		font-size: 17pt;
 	}
 	.leader_description {
-		font-size: 14pt;
+		font-size: 13pt;
 	}
 	.intelligence__caption {
 		display: flex;
@@ -1740,11 +1741,6 @@ ul, ol {list-style-type: none;}
 		margin: 0 0 30px 0;
 		display: block;
 	}
-	.main-news {
-		border-radius: 20px;
-		padding: 30px;
-		width: 100%;
-	}
 	.phones {
 		border-radius: 20px;
 	}
@@ -1761,25 +1757,16 @@ ul, ol {list-style-type: none;}
 		font-size: 20pt;
 	}
 	.title {
-		font-size: 24pt;
+		font-size: 22pt;
 		width: auto;
 	}
 	.title__logo {
-		width: 50px;
-	}
-	.counter {	
-		margin: 20px 0;
-	}
-	.today {
-		margin: 0 20px;
-	}
-	.count {
-		margin: 0 10px;
+		width: 40px;
 	}
 	.link-btn {
 		font-size: 16pt;
 		padding: 10px 30px;
-		border-radius: 20px;
+		border-radius: 30px;
 	}
 	
 	/*Экстренные телефоны*/
@@ -1787,9 +1774,7 @@ ul, ol {list-style-type: none;}
 		display: block;
 	}
 	.phones__info {
-		font-size: 14pt;
-		line-height: 35px;
-		border-top: 1px solid #B0B0B0;
+		font-size: 12pt;
 	}
 	/*----- Логотипы ----*/
 	.logotype {
@@ -1814,8 +1799,8 @@ ul, ol {list-style-type: none;}
 		padding: 0;
 	}
 	.footer__logo-title {
-		margin: 10px 0;
-		width: 95%;
+		margin: 10px auto;
+		width: 90%;
 	}
 	.footer__inner {
 		min-height: 100px;
@@ -1869,20 +1854,15 @@ ul, ol {list-style-type: none;}
 	 ====== ШАПКА =====
 	 =================*/
 
-	/*-----Секция ссылок-----*/
-	.link {
-		font-size: 8pt;
-		width: 100%;
-	}
 	/*----- Секция заголовка -----*/
 	.logo_top {
 		font-size: 10pt;
 	}
 	.logo_center {
-		font-size: 23pt;
+		font-size: 22pt;
 	}
 	.logo_bottom {
-		font-size: 12pt;
+		font-size: 11pt;
 	}
 	/*---------- Menu burger ----------*/
 	.menu__close {
@@ -1902,10 +1882,10 @@ ul, ol {list-style-type: none;}
 		font-size: 14pt;
 	}
 	.leader_caption {
-		font-size: 18pt;
+		font-size: 15pt;
 	}
 	.leader_description {
-		font-size: 12pt;
+		font-size: 11pt;
 	}
 	.intelligence__caption {
 		display: flex;
@@ -1942,9 +1922,7 @@ ul, ol {list-style-type: none;}
 		display: block;
 	}
 	.main-news {
-		border-radius: 20px;
-		padding: 30px;
-		width: 100%;
+		
 	}
 	.phones {
 		border-radius: 20px;
@@ -1978,12 +1956,6 @@ ul, ol {list-style-type: none;}
 	.phones__caption {
 		display: block;
 	}
-	.phones__info {
-		font-size: 14pt;
-		line-height: 35px;
-		border-top: 1px solid #B0B0B0;
-	}
-	
 	/*----- Логотипы ----*/
 	.logos__inner {
 		min-height: 100px;
@@ -2044,16 +2016,17 @@ ul, ol {list-style-type: none;}
 	.header__caption_logo {
 		padding: 0;
 	}
+	.logo {
+		line-height: 20px;
+	}
 	.logo_top {
 		font-size: 8pt;
 	}
 	.logo_center {
-		font-size: 20pt;
-		margin: 0;
-		line-height: 20px;
+		font-size: 18pt;
 	}
 	.logo_bottom {
-		font-size: 10pt;
+		font-size: 9pt;
 	}
 
 	/*	======================
@@ -2065,7 +2038,7 @@ ul, ol {list-style-type: none;}
 		font-size: 14pt;
 	}
 	.leader_caption {
-		font-size: 17pt;
+		font-size: 13pt;
 	}
 	.leader_description {
 		font-size: 10pt;
@@ -2101,11 +2074,6 @@ ul, ol {list-style-type: none;}
 		margin: 0 0 30px 0;
 		display: block;
 	}
-	.main-news {
-		border-radius: 20px;
-		padding: 30px;
-		width: 100%;
-	}
 	/*Объявления*/
 	.main-news__title {
 		display: flex;
@@ -2126,14 +2094,7 @@ ul, ol {list-style-type: none;}
 	}
 	
 	/*Экстренные телефоны*/
-	.phones__caption {
-		display: block;
-	}
-	.phones__info {
-		font-size: 14pt;
-		line-height: 35px;
-		border-top: 1px solid #B0B0B0;
-	}
+
 	.phones__name {
 		width: 100%;
 		text-align: left;
@@ -2156,7 +2117,7 @@ ul, ol {list-style-type: none;}
 	======= ПОДВАЛ ======
 	=====================*/
 	.table-of-contents__link {
-		font-size: 8pt;
+		font-size: 7pt;
 	}
 	.table-of-contents {
 		margin: 10px 0;
@@ -2167,8 +2128,20 @@ ul, ol {list-style-type: none;}
 		grid-template-rows: repeat(4, auto );
 	}
 	.footer__logo-title {
-		margin: 10px 0;
 		padding: 0;
+	}
+	.footer-logo_top {
+		font-size: 10px;
+		padding: 0;
+		margin: 0;
+		text-align: center;
+	}
+	.footer-logo_center {
+		font-size: 22px;
+	}
+	.footer-logo_bottom {
+		font-size: 10px;
+		text-align: center;
 	}
 }
 
@@ -2181,5 +2154,14 @@ ul, ol {list-style-type: none;}
 	}
 	.table-of-contents__link {
 		font-size: 6pt;
+	}
+	.content__link {
+		font-size: 16px;
+	}
+	.menu__close {
+		font-size: 12pt;
+	}
+	.menu__link {
+		font-size: 12pt;
 	}
 }

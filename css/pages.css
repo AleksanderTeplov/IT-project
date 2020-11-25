@@ -383,6 +383,14 @@
 	.reception__messages {
 		width: 100%;
 	}
+	.messages__info {
+		padding: 0 0 0 20px;
+	}
+}
+@media screen and (max-width: 300px) {
+	.messages__info {
+		padding: 0 0 0 10px;
+	}
 }
 
 
@@ -406,5 +414,221 @@
 	min-height: 300px;
 	padding: 10px;
 	border: 1px solid #119EF7;
-	margin: 20px 0;
+	margin: 10px 0;
+	display: flex;
+	position: relative;
+}
+/*----- сайдбар меню -----*/
+.sidebar__menu {
+	width: 30%;
+	padding: 20px 30px;
+	border-radius: 20px;
+	background: #26EE21;
+}
+.sidebar__menu-list {
+	line-height: 25px;
+}
+.sidebar__menu-item {
+	list-style-image: url(../img/marker-for-list.png);
+}
+.sidebar__link {
+	color: #fff;
+	font-weight: bold;
+}
+.sidebar__link--active,
+.sidebar__link:hover {
+	color: #1D0DED;
+}
+
+
+/*----- контент услуг -----*/
+.service__content {
+	width: 70%;
+	padding: 10px;
+}
+.service__content-title {
+	font-size: 24pt;
+	color: #1919E9;
+	font-weight: bold;
+}
+.service__content-wrap {
+	padding: 10px;
+	margin: 20px;
+	min-height: 10px;
+}
+.service__download-file {
+	border: 1px solid blue;
+	border-radius: 20px;
+	display: flex;
+	line-height: 20px;
+	padding: 5px;
+	margin: 10px 0;
+	color: #000;
+}
+.download-file__icon {
+	font-size: 24pt;
+	margin: 5px 10px;
+}
+.download-file__info {
+	display: block;
+}
+.download-file__caption {
+	display: block;
+}
+.download-file__date {
+	display: block;
+	font-weight: bold;
+	margin: 10px 0 0 0;
+}
+.service__download-file:hover {
+	color: #2AB93E;
+}
+.download-file__icon:hover {
+	transform: translateY(3px);
+	transition: .3s; 
+}
+.sidebar__menu-burger {
+	display: none;
+}
+.sidebar__burger-icon {
+	color: #1221E8;
+}
+.sidebar__menu-window {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #50D621;
+	padding: 20px;
+}
+#sidebarWindowBlock {
+	display: none;
+}	
+.sidebar__menu-window-list {
+	width: 100%;
+}
+.sidebar__menu-window-item {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+.sidebar__menu-window-link {
+	margin: 0 0 0 15px;
+	padding: 5px;
+	color: #fff;
+	font-size: 14pt;
+	line-height: 40px;
+	border-bottom: 1px solid #2245DE;
+}
+.sidebar__menu-window-link:before {
+	content: '';
+	position: absolute;
+	top: 10px;
+	left: -10px;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border: 1px solid #2245DE;
+	border-radius: 50%;
+}
+.sidebar__menu-window-link--active:before {
+	content: '';
+	position: absolute;
+	top: 10px;
+	left: -10px;
+	width: 20px;
+	height: 20px;
+	background: #2245DE;
+	border-radius: 50%;;
+}
+.sidebar__menu-window-link--active {
+	color: #2245DE;
+}
+
+.sidebar__menu-window-list__closed {
+	display: none;
+	margin: 10px 0 0 10px;
+	padding: 5px;
+	color: #F11721;
+	letter-spacing: 2px;
+	border: 1px solid #F11721;
+	width: 30%;
+	justify-content: center;
+	align-items: center;
+	font-style: italic;
+}
+@media screen and (max-width: 800px) {
+	.sidebar__menu {
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 658px) {
+	.sidebar__menu {
+		display: none;
+	}
+	.service__content {
+		width: 100%;
+	}
+	.sidebar__menu-burger {
+		display: block;
+	}
+}
+@media screen and (max-width: 558px) {
+	.sidebar__menu-window-list__closed {
+		font-size: 12pt;
+	}
+	.service__content-title {
+		font-size: 22pt;
+	}
+	.service__content-wrap {
+		font-size: 12pt;
+		margin: 0;
+	}
+}
+@media screen and (max-width: 500px) {
+	.service__content-title {
+		font-size: 20pt;
+	}
+}
+@media screen and (max-width: 450px) {
+	.service__content-title {
+		font-size: 18pt;
+	}
+	.service__content-wrap {
+		font-size: 11pt;
+	}
+	.sidebar__menu-window-link {
+		font-size: 12pt;
+	}
+}
+@media screen and (max-width: 400px) {
+	.service__content-title {
+		font-size: 16pt;
+	}
+	.service__content-wrap {
+		font-size: 10pt;
+	}
+	.sidebar__menu-window-link {
+		font-size: 11pt;
+	}
+	.sidebar__menu-window-list__closed {
+		font-size: 10pt;
+	}
+}
+@media screen and (max-width: 358px) {
+	.service__content-title {
+		font-size: 14pt;
+	}
+	.service__content-wrap {
+		font-size: 10pt;
+	}
+	.sidebar__menu-window-link {
+		font-size: 10pt;
+	}
+	.sidebar__menu-window-list__closed {
+		font-size: 8pt;
+	}
 }

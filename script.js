@@ -40,6 +40,17 @@ const removeToLastCoauthor = () => {
 }
 
 
+$('.sidebar__menu-burger').on('click', () => {
+	$('#sidebarWindowBlock').addClass('sidebar__menu-window').css({'display':'block'})
+	$('.sidebar__menu-window-list__closed').css({'display':'flex'})
+})
+
+
+$('.sidebar__menu-window-list__closed').on('click', () => {
+	$('#sidebarWindowBlock').removeClass('sidebar__menu-window').css({'display':'none'})
+	$('.sidebar__menu-window-list__closed').css({'display':'none'})
+})
+
 
 
 	

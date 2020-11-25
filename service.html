@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="./css/index.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 	<link rel="stylesheet" href="./css/pages.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
 	<!-- ---- Обертка ---- -->
@@ -76,10 +78,10 @@
 								<li><a class="menu__link" href="">Глава</a></li>
 								<li><a class="menu__link" href="">Нормотворчество</a></li>
 								<li><a class="menu__link" href="">Новости</a></li>
-								<li><a class="menu__link" href="">Услуги населению</a></li>
+								<li><a class="menu__link" href="./service.html">Услуги населению</a></li>
 								<li><a class="menu__link" href="">Наша гордость</a></li>
 								<li><a class="menu__link" href="">Контакты</a></li>
-								<li><a class="menu__link" href="">Интернет-приемная</a></li>
+								<li><a class="menu__link" href="./internetPriemnaya.html">Интернет-приемная</a></li>
 
 								<li><a class="menu__link" href="">Противодействие коррупции</a></li>
 								<li><a class="menu__link" href="">Полезные телефоны</a></li>
@@ -96,17 +98,17 @@
 
 
 				<!-- ======= ВЕРХНЯЯ НАВИГАЦИЯ =========== -->
-					<nav class="header__nav">
+						<nav class="header__nav">
 						<ul class="header__nav_list">
 							<li><a class="nav__link" href="">МО</a></li>
 							<li><a class="nav__link" href="">Власть</a></li>
 							<li><a class="nav__link" href="">Глава</a></li>
 							<li><a class="nav__link" href="">Нормотворчество</a></li>
 							<li><a class="nav__link" href="">Новости</a></li>
-							<li><a class="nav__link" href="">Услуги населению</a></li>
+							<li><a class="nav__link nav__link--active" href="./service.html">Услуги населению</a></li>
 							<li><a class="nav__link" href="">Наша гордость</a></li>
 							<li><a class="nav__link" href="">Контакты</a></li>
-							<li><a class="nav__link" href="">Интернет-приемная</a></li>
+							<li><a class="nav__link" href="./internetPriemnaya.html">Интернет-приемная</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -180,8 +182,114 @@
 		
 		<section class="service">
 			<div class="container">
+
+				<div class="sidebar__menu-window-list__closed">
+					<i class="fas fa-window-close"></i>
+					Закрыть
+				</div>
 				<div class="service__inner">
-					services
+
+					<nav class="sidebar__menu">
+						<ul class="sidebar__menu-list">
+							<li class="sidebar__menu-item">
+								<a class="sidebar__link sidebar__link--active" href="#">
+									Индивидуальные предприниматели
+								</a>
+							</li>
+							<li class="sidebar__menu-item">
+								<a class="sidebar__link" href="#">
+									Административные регламенты
+								</a>
+							</li>
+							<li class="sidebar__menu-item">
+								<a class="sidebar__link" href="#">
+									Учредительные документы
+								</a>
+							</li>
+						</ul>
+					</nav>
+
+
+					<nav class="sidebar__menu-burger">
+						<i class="fas fa-bars sidebar__burger-icon"></i>
+
+						<div class="" id="sidebarWindowBlock">
+							
+							<ul class="sidebar__menu-window-list">
+								<li class="sidebar__menu-window-item">
+									<a href="" class="sidebar__menu-window-link
+									sidebar__menu-window-link--active">
+										Индивидуальные предприниматели
+									</a>
+								</li>
+								<li class="sidebar__menu-window-item">
+									<a href="" class="sidebar__menu-window-link">
+										Административные регламенты
+									</a>
+								</li>
+								<li class="sidebar__menu-window-item">
+									<a href="" class="sidebar__menu-window-link">
+										Учредительные документы
+									</a>
+								</li>
+							</ul>
+							
+						</div>
+
+						
+					</nav>
+
+
+
+
+
+					<div class="service__content">
+						<h3 class="service__content-title">
+							Индивидуальные предприниматели
+						</h3>
+						<div class="service__content-wrap">
+							<a class="service__download-file" href="http://kurganadm.ru/file/download/326">
+								<div class="download-file__icon">
+									<i class="fas fa-file-download"></i>
+								</div>
+								<div class="download-file__info">
+									<span class="download-file__caption">
+										13.10.2017 2-9 Об имущественной поддержке.doc
+									</span>
+									<span class="download-file__date">
+										Дата загрузки: 2019-06-02
+									</span>
+								</div>
+							</a>
+							<a class="service__download-file" href="http://kurganadm.ru/file/download/327">
+								<div class="download-file__icon">
+									<i class="fas fa-file-download"></i>
+								</div>
+								<div class="download-file__info">
+									<span class="download-file__caption">
+										30 07.08.2017 Об утверждении Положения «О порядке организации и осуществления муниципального контроля в области торговой деятельности на территории Курганского сельсов.docx
+									</span>
+									<span class="download-file__date">
+										Дата загрузки: 2019-06-02
+									</span>
+								</div>
+							</a>
+							<a class="service__download-file" href="http://kurganadm.ru/file/download/328">
+								<div class="download-file__icon">
+									<i class="fas fa-file-download"></i>
+								</div>
+								<div class="download-file__info">
+									<span class="download-file__caption">
+										31 07.08.2017 Об утверждении Порядка разработки и утверждения схемы размещения нестационарных торговых объектов на территории Курганского сельсовета.doc
+									</span>
+									<span class="download-file__date">
+										Дата загрузки: 2019-06-02
+									</span>
+								</div>
+							</a>
+						</div>
+
+					</div>
 				</div>
 			</div>
 		</section>
@@ -265,7 +373,7 @@
 							<li><a class="footer__nav__link" href="">МО</a></li>
 							<li><a class="footer__nav__link" href="">Власть</a></li>
 							<li><a class="footer__nav__link" href="">Новости</a></li>
-							<li><a class="footer__nav__link" href="">Услуги населению</a></li>
+							<li><a class="footer__nav__link footer__nav__link--active" href="./service.html">Услуги населению</a></li>
 							<li><a class="footer__nav__link" href="">Противодействие коррупции</a></li>
 							<li><a class="footer__nav__link" href="">Полезные телефоны</a></li>
 							<li><a class="footer__nav__link" href="">Кадровое обеспечение</a></li>
@@ -291,10 +399,10 @@
 								<li><a class="menu__link" href="">Глава</a></li>
 								<li><a class="menu__link" href="">Нормотворчество</a></li>
 								<li><a class="menu__link" href="">Новости</a></li>
-								<li><a class="menu__link" href="">Услуги населению</a></li>
+								<li><a class="menu__link" href="./service.html">Услуги населению</a></li>
 								<li><a class="menu__link" href="">Наша гордость</a></li>
 								<li><a class="menu__link" href="">Контакты</a></li>
-								<li><a class="menu__link" href="">Интернет-приемная</a></li>
+								<li><a class="menu__link" href="./internetPriemnaya.html">Интернет-приемная</a></li>
 
 								<li><a class="menu__link" href="">Противодействие коррупции</a></li>
 								<li><a class="menu__link" href="">Полезные телефоны</a></li>
