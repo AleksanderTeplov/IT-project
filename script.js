@@ -51,6 +51,9 @@ $('.sidebar__menu-window-list__closed').on('click', () => {
 	$('.sidebar__menu-window-list__closed').css({'display':'none'})
 })
 
+$('.fa-search').on('click', () => {
+	alert('Функция поиска не работает! Извините за доставленные неудобства, мы постараемся исправиться.')
+})
 
 
 	
