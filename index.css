@@ -1,0 +1,2168 @@
+
+/*----- Default styles-----*/
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	 /*border: 1px solid red; */
+}
+body {
+	font-family: 'Lato', sans-serif;
+	-moz-user-select: none;
+	user-select: none;
+	background: #f5f7fa;
+}
+.wrapper {
+	max-width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+}
+.container {
+	max-width: 1100px;
+	height: 100%;
+	margin: 0 auto;
+}
+a {	
+	text-decoration: none;
+	transition: all .3s ease 0s;
+	-webkit-transition: all .3s ease 0s;
+  	-moz-transition: all .3s ease 0s;
+  	-o-transition: all .3s ease 0s;
+}
+h1,h2,h3,p {
+	font-weight: normal;
+	text-align: center;
+}
+ul, ol {list-style-type: none;}
+
+
+
+/*----- Main styles -----*/
+
+
+/*=================
+ ====== ШАПКА =====
+ =================*/
+.header {
+	width: 100%;
+	min-height: 100px;
+}
+.header__inner {
+	width: 100%;
+}
+/*-----Секция ссылок-----*/
+.header__links {
+	display: flex;
+	justify-content: space-around;
+	padding: 20px;
+
+}
+.link {
+	color: #292929;
+	border-bottom: 1px solid #292929;
+	font-size: 12pt;
+	font-style: italic;
+}
+.link:hover {
+	color: #29E210;
+	border-bottom: 1px solid #29E210;
+}
+
+
+
+/*----- Секция заголовка -----*/
+.header__caption {
+	width: 100%;
+	min-height: 200px;
+	display: flex;
+	justify-content: space-between;
+	background: #162364;
+	line-height: 30px;
+	color: #fff;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+.captipon__link {
+	color: #fff;
+}
+.header__caption_logo {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.logo {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	min-height: 100px;
+}
+.logo_top {
+	font-size: 14pt;
+	text-align: left;
+	padding-left: 20px;
+}
+.logo_center {
+	font-size: 32pt;
+	font-family: ptserif-bold;
+	font-weight: bold;
+	text-align: center;
+}
+.logo_bottom {
+	font-size: 16pt;
+	text-align: right;
+	margin-top: 5px;
+}
+/*---Форма поиска---*/
+.header__caption_search {
+	width: 50%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 20px;
+}
+.search__form {
+	width: auto;
+	display: flex;
+	justify-content: center;
+}
+.search__input {
+	width: 250px;
+	padding: 15px;
+	font-family: Tahoma, sans-serif;
+	border-radius: 25px 0 0 25px;
+	border: none;
+	outline: none;
+}
+.fa-search {
+	width: 50px;
+	height: 50px;
+	color: #119EF7;
+	cursor: pointer;
+	background: #fff;
+	text-align: center;
+	padding-top: 15px;
+	border-radius: 0 50% 50% 0;
+	transition: .3s;
+}
+.fa-search:hover {
+	color: #0C00FF;
+	
+}
+.header__logo {
+	width: 90px;
+	height: 90px;
+	background: #fff;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.logo-img {
+	width: 50px;
+}
+
+
+
+
+
+/*----- Секция навигации -----*/
+.header__nav {
+	width: 100%;
+	min-height: 50px;	
+}
+.header__nav_list {
+	display: grid;
+	grid-template-columns: repeat(9, auto);
+	justify-content: space-around;
+	align-items: center;
+}
+.nav__link {
+	height: 50px;
+	padding: 20px;
+	color: #001d38;
+	width: 100%;
+	font-size: 14pt;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+.nav__link:hover,
+.nav__link--active {
+	background: #162364;
+	color: #fff;
+	transition: .5s;
+}
+.burger-menu {
+	display: none;
+}
+.menu-window {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+/*	======================
+========= Контент =========
+===========================*/
+.content {
+	width: 100%;
+	min-height: 600px;
+}
+.content__inner {
+	width: 100%;
+	min-height: 600px;
+	display: grid;
+	grid-template-rows: repeat(3fr);
+}
+.top-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+/*----- Информация о лидере организации ----*/
+.leader {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+}
+/*----- Блок сведений -----*/
+.intelligence {
+	width: 50%;
+	/*background: #C5CBCA;*/
+	padding: 30px 15px;
+	font-size: 14pt;
+	border-radius: 20px;
+}
+.leader_caption {
+	margin: 10px;
+	font-size: 24pt;
+	font-weight: bold;
+	color: #0FBB07;
+	text-align: center;
+}
+.leader_description {
+	margin: 10px;
+	font-size: 14pt;
+	color: #5595FF;
+}
+.intelligence__caption {
+	color: #5595FF;
+	text-align: center;
+	font-style: italic;
+	margin: 0 0 10px 0;
+	display: flex;
+	justify-content: space-around;
+}
+.intelligence__info {
+	width: 60%;
+	margin: 0 auto;
+	text-align: justify;
+	line-height: 35px;
+	display: flex;
+	justify-content: space-between;
+	color: #001d38;
+	font-family: Calibri;
+}
+
+
+
+/*----- Новости, Услуги, Обращения -----*/
+.middle-content {
+	min-height: 400px;
+	width: 100%;
+	display: flex;
+	margin: 20px 0;
+}
+.content__links {
+	width: 40%;
+	padding: 0 30px;
+}
+.content__link-block {
+	min-height: 200px;
+	margin: 30px 0;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.content__link {
+	width: 80%;
+	height: 100%;
+	padding: 100px 0;
+	color: #fff;
+	font-size: 20pt;
+	font-weight: bold;
+	transition-delay: .3s;
+	transition: .5s;
+	transform: perspective(1000px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+.content__link:hover {
+	transform: perspective(1000px) rotateX(-30deg);
+	/*box-shadow: 0 30px 30px #ACACAC;*/
+	/*transform: perspective(1000px) rotateX(35deg) rotateY(4deg) rotateZ(-30deg);*/
+}
+.content__link-first {
+	background: url(../img/papka.png) no-repeat center / contain;
+}
+.content__link-second {
+	background: url(../img/papka2.png) no-repeat center / contain;
+
+}
+
+.content__news {
+	width: 60%;
+	padding: 30px;
+	border-radius: 20px;
+}
+.news__caption {
+	margin: 10px;
+	font-size: 14pt;
+	color: #5595FF;
+	font-style: italic;
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+}
+.news__info {
+	display: grid;
+	grid-template-columns: repeat(3, 200px);
+	grid-template-rows: repeat (4, 200px);
+	justify-content: space-around;
+	margin-top: 50px;
+}
+.news__text {
+	display: block;
+	margin: 10px;
+	min-height: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border: 1px solid #457AFF;
+	border-radius: 20px;
+	text-align: justify;
+	color: #001d38;
+}
+.news__text:hover {
+	border: 1px solid #3BE606;
+}
+.text {
+	margin: 0 0 10px 0;
+	padding: 10px;
+	text-align: left;
+}
+.date {
+	color: #3F5D75;
+	font-size: 10pt;
+}
+.show__wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+/*----- Объявления, Экстренные Телефоны  ------*/
+.bottom-content {
+	width: 100%;
+	min-height: 300px;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0 30px 0;
+}
+.main-news {
+	width: 50%;
+	background: #FFD700;
+	border-radius: 20px;
+	padding: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.phones {
+	width: 50%;	
+	border-radius: 20px;
+}
+/*Объявления*/
+.main-news__title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 50%;
+}
+.title__round {
+	background: #fff;
+	border-radius: 50%;
+	color: #fff;
+	width: 90px;
+	height: 90px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.title {
+	font-size: 28pt;
+	font-family: Tahoma, sans-serif;
+	font-weight: bold;
+	width: auto;
+}
+.title__logo {
+	width: 50px;
+}
+.counter {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0;
+}
+.today {
+	margin: 0 20px;
+}
+.count {
+	margin: 0 10px;
+}
+.main-news__link {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.link-btn {
+	padding: 10px 30px;
+	border-radius: 30px;
+	border: 2px solid #507FF6;
+}
+.link-btn:hover {
+	background-color: #507FF6;
+	color: #fff;	
+	transition: .4s;
+}
+/*Экстренные телефоны*/
+.phones {
+	padding: 30px;
+}
+.phones__caption {
+	color: #5595FF;
+	text-align: center;
+	font-style: italic;
+	margin: 0 0 10px 0;
+	display: flex;
+	justify-content: space-around;
+}
+.phones__info {
+	font-size: 14pt;
+	text-align: justify;
+	line-height: 35px;
+	display: flex;
+	justify-content: space-between;
+	font-family: Calibri;
+	border-top: 1px solid #B0B0B0;
+}
+.phones__number {
+	color: #3000FF;
+}
+
+
+
+
+/*----- ЛЕНТА СПОНСОРОВ ----*/
+.logos {
+	width: 100%;
+	min-height: 100px;
+	border-top: 1px solid #001d38; 
+}
+.logos__inner {
+	background: #001d38;
+	min-height: 100px;
+	padding: 20px;
+	display: flex;
+	justify-content: space-around;
+}
+.logotype {
+	border: 2px solid #fff;
+	transition: all .3s ease 0s;
+}
+.logotype:hover {
+	border-radius: 50%;
+	transform: scale(0.9);
+	border: 2px solid #4F64FF;
+}
+
+
+
+
+
+
+/*=====================
+======= ПОДВАЛ ======
+=====================*/
+.footer {
+	width: 100%;
+	min-height: 300px;
+	
+}
+.footer__inner {
+	min-height: 300px;
+	background-color: #001d38;
+	border-radius: 0 0 20px 20px;
+}
+
+/*----- Навигация подвала -----*/
+.footer__nav {
+	width: 100%;
+	min-height: 50px;	
+}
+.footer__nav_list {
+	display: grid;
+	grid-template-columns: repeat(9, auto );
+	justify-content: space-around;
+}
+.footer__nav__link {
+	height: 50px;
+	padding: 20px;
+	color: #fff;
+	width: 100%;
+	font-size: 14pt;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	border: 1px solid #4F64FF;
+}
+.footer__nav__link:hover,
+.footer__nav__link--active {
+	background: #4F64FF;
+	border: 1px solid #fff;
+	transition: .5s;
+}
+
+
+/*----- Карта сайта -----*/
+.table-of-contents {
+	width: 100%;
+	margin: 20px 0;
+}
+.table-of-contents__link {
+	width: 30%;
+	margin: 0 auto;
+	padding: 20px 0;
+	border-radius: 30px;
+	border: 2px solid #4F64FF;
+	color: #4F64FF;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+.table-of-contents__link:hover,
+.footer__nav__link--active {
+	background-color: #4F64FF;
+	color: #fff;
+	transition: .4s;
+}
+
+
+/*----- Логотип подвала -----*/
+.footer-logotype {
+	width: 100%;
+}
+.footer-logo__inner {
+	width: 40%;
+	margin: 0 auto;
+}
+.footer__logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer__logo-img {
+	width: 50px;
+}
+.footer__logo-title {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: #888888;
+	margin: 20px 0;
+}
+.footer-logo_top {
+	font-size: 10pt;
+	text-align: left;
+	padding-left: 80px;
+}
+.footer-logo_center {
+	font-size: 24pt;
+	font-family: ptserif-bold;
+	font-weight: bold;
+	text-align: center;
+}
+.footer-logo_bottom {
+	font-size: 12pt;
+	text-align: right;
+	margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===================
+	АДАПТИВНЫЙ ДИЗАЙН ПРИ МАКСИМАЛЬНОЙ ШИРИНЕ 1100 PX
+	==================*/
+
+@media screen and (max-width: 1100px) {
+	.wrapper {
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+	.container {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+	/*=================
+	 ====== ШАПКА =====
+	 =================*/
+	/*-----Секция ссылок-----*/
+	.link {
+		font-size: 11pt;
+	}
+	/*----- Секция заголовка -----*/
+	.header__caption {
+		line-height: 30px;
+		min-height: 150px;
+	}
+	.logo_top {
+		font-size: 12pt;
+	}
+	.logo_center {
+		font-size: 28pt;
+	}
+	.logo_bottom {
+		font-size: 14pt;
+	}
+	
+	.search__form {
+		width: 80%;
+	}
+	.logo-img {
+		
+	}
+	/*----- Секция навигации -----*/
+	.nav__link {
+		font-size: 10pt;
+	}
+	/*	======================
+	========= Контент =========
+	===========================*/
+	/*----- Блок сведений -----*/
+	.intelligence {
+		font-size: 14pt;
+	}
+	.leader_caption {
+		font-size: 24pt;
+	}
+	.leader_description {
+		font-size: 14pt;
+	}
+	/*----- Новости, Услуги, Обращения -----*/
+	.content__link {
+		font-size: 18pt;
+	}
+	.news__info {
+		display: grid;
+		grid-template-columns: repeat(2, 200px);
+		grid-template-rows: repeat (3, 200px);
+		justify-content: space-around;
+		margin-top: 50px;
+	}
+	/*----- Объявления, Экстренные Телефоны  ------*/
+	/*Объявления*/
+	.title__round {
+		width: 60px;
+		height: 60px;
+	}	
+	.title {
+		font-size: 22pt;
+		margin: 0 5px;
+	}
+	.title__logo {
+		width: 40px;
+	}
+
+	/*----- Логотипы ----*/
+	.logotype {
+		width: 50px;
+	}
+	/*=====================
+	======= ПОДВАЛ ======
+	=====================*/
+	/*----- Навигация подвала -----*/
+	.footer__nav__link {
+		font-size: 10pt;
+	}
+	/*----- Логотип подвала -----*/
+	.footer-logo_top {
+		font-size: 10pt;
+	}
+	.footer-logo_center {
+		font-size: 22pt;
+	}
+	.footer-logo_bottom {
+		font-size: 12pt;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===================
+	АДАПТИВНЫЙ ДИЗАЙН ПРИ МАКСИМАЛЬНОЙ ШИРИНЕ 900 PX
+	==================*/
+
+@media screen and (max-width: 900px) {
+	.wrapper {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+	.container {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+	/*=================
+	 ====== ШАПКА =====
+	 =================*/
+	/*-----Секция ссылок-----*/
+	.link {
+		font-size: 10pt;
+	}
+	/*----- Секция заголовка -----*/
+	.logo_top {
+		font-size: 10pt;
+	}
+	.logo_center {
+		font-size: 26pt;
+	}
+	.logo_bottom {
+		font-size: 12pt;
+	}
+	/*---Форма поиска---*/
+	.header__logo {
+		width: 70px;
+		height: 70px;
+	}
+	.logo-img {
+		width: 50px;
+	}
+	/*----- Секция навигации -----*/
+	.nav__link {
+		padding: 10px;
+		font-size: 10pt;
+	}
+	/*	======================
+	========= Контент =========
+	===========================*/
+	/*----- Блок сведений -----*/
+	.intelligence {
+		font-size: 14pt;
+	}
+	.leader_caption {
+		font-size: 24pt;
+	}
+	.leader_description {
+		font-size: 14pt;
+	}
+	.intelligence__info {
+		width: 100%;
+	}
+	/*----- Новости, Услуги, Обращения -----*/
+	.content__link {
+		font-size: 16pt;
+	}
+	.news__caption {
+		font-size: 16pt;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.news__info {
+		display: grid;
+		grid-template-columns: repeat(2, 200px);
+		grid-template-rows: repeat (3, 200px);
+		justify-content: space-around;
+		margin-top: 50px;
+	}
+	/*----- Объявления, Экстренные Телефоны  ------*/
+	.main-news {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	/*Объявления*/
+	.main-news__title {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	.title__round {
+		width: 70px;
+		height: 70px;
+		font-size: 24pt;
+	}
+	.title {
+		font-size: 24pt;
+		width: 100%;
+	}
+	.title__logo {
+		width: 40px;
+	}
+	/*Экстренные телефоны*/
+	.phones__caption {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.phones__info {
+		font-size: 14pt;
+	}
+	.footer__nav__link {
+		padding: 10pt;
+	}
+		/*=====================
+	}
+	======= ПОДВАЛ ======
+	=====================*/
+	/*----- Логотип подвала -----*/
+	.footer-logo_top {
+		font-size: 10pt;
+	}
+	.footer-logo_center {
+		font-size: 22pt;
+	}
+	.footer-logo_bottom {
+		font-size: 12pt;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===================
+	АДАПТИВНЫЙ ДИЗАЙН ПРИ МАКСИМАЛЬНОЙ ШИРИНЕ 800 PX
+	==================*/
+
+@media screen and (max-width: 800px) {
+	.wrapper {
+		max-width: 750px;
+	}
+	.container {
+		max-width: 650px;
+	}
+	/*=================
+	 ====== ШАПКА =====
+	 ================*/
+	/*-----Секция ссылок-----*/
+	.header__links {
+		display: flex;
+		justify-content: space-around;
+	}
+	.link {
+		font-size: 10pt;
+		border: 1px solid grey;
+		width: 30%;
+		min-height: 50px;
+		padding: 3px;
+	}
+	/*----- Секция заголовка -----*/
+	.header__caption {
+		line-height: 26px;
+		min-height: 120px;
+	}
+	.logo_top {
+		font-size: 10pt;
+	}
+	.logo_center {
+		font-size: 22pt;
+	}
+	.logo_bottom {
+		font-size: 12pt;
+	}
+	/*---Форма поиска---*/
+	.search__input {
+		max-width: 170px;
+	}
+	.header__logo {
+		width: 50px;
+		height: 50px;
+	}
+	.logo-img {
+		width: 30px;
+	}
+
+	/*----- Секция навигации -----*/
+	.header__nav {
+		min-height: 0;
+	}
+	.nav__link {
+		display: none;
+		min-height: 0;
+	}	
+	.burger-menu {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.burger-bar {
+		display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    margin: 10px;
+	    padding: 0px 40px;
+	    cursor: pointer;
+	    font-size: 16pt;
+	    color: #119EF7;
+	    border: 1px solid #119EF7;
+	    border-radius: 30px;
+	    text-transform: uppercase;
+	}
+	.burger-bar:hover {
+		color: #fff;
+		background: #119EF7;
+		transition: .5s;
+	}
+	.burger-name {
+		margin: 10px 20px;
+	}
+	.menu-window {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: #119EF7;
+		z-index: 999;
+		overflow: scroll;
+		text-align: center;
+
+	}
+	.menu__close {
+		width: 30%;
+		margin: 0 auto;
+		margin-top: 100px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		color: #fff;
+		font-size: 16pt;
+		border-radius: 30px;
+		border: 1px solid #fff;
+	}
+	.menu__close:hover {
+		background: #fff;
+		color: #119EF7;
+		transition: .5s;
+	}
+	.closed__name {
+		margin: 20px;
+	}
+
+	/*---- Бургер Меню Список -----*/
+	.header__menu {
+		min-height: auto;
+		margin: 20px 0;
+	}
+	.header__menu_list {
+		
+	}
+	.menu__link {
+		margin: 0 auto;
+		width: 50%;
+		line-height: 30px;
+		color: #fff;
+		font-size: 16pt;
+	}
+	.menu__link:hover {
+		background: #fff;
+		color: #119EF7;
+		transition: .5s;
+	
+
+	}
+
+
+	/*	======================
+	========= Контент =========
+	===========================*/
+	/*----- Блок сведений -----*/
+	.intelligence {
+		font-size: 14pt;
+	}
+	.leader_caption {
+		font-size: 24pt;
+	}
+	.leader_description {
+		font-size: 14pt;
+	}
+	.intelligence__caption {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	/*----- Новости, Услуги, Обращения -----*/
+	.middle-content {
+		display: block;
+	}
+	.content__links {
+		width: 100%;
+		display: flex;
+	}
+	.content__link-block {
+		width: 50%;
+	}
+	.content__link {
+		font-size: 16pt;
+		text-align: center;
+	}
+	.content__links {
+		padding: 0;
+	}
+	.content__news {
+		width: 100%;
+	}
+	.news__caption {
+		font-size: 16pt;
+		display: flex;
+		flex-direction: column;
+		line-height: 20px;
+		margin: 0;
+	}
+	.news__info {
+		display: grid;
+		grid-template-columns: repeat(2, 250px);
+		grid-template-rows: repeat (3, 200px);
+		justify-content: space-around;
+		font-size: 14pt;
+		margin: 0;
+	}
+
+	/*----- Объявления, Экстренные Телефоны  ------*/
+	.bottom-content {
+		display: block;
+	}
+	.main-news {
+		width: 100%;
+	}
+	/*Объявления*/
+	.main-news__title {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.title__round {
+		width: 100px;
+		height: 100px;
+		font-size: 24pt;
+	}
+	.title {
+		font-size: 26pt;
+		width: auto;
+		margin: 0 20px;
+	}
+	.title__logo {
+		width: 70px;
+	}
+	.link-btn {
+		font-size: 16pt;
+	}
+	/*Экстренные телефоны*/
+	.phones {
+		width: 100%;
+	}
+	.phones__info {
+		font-size: 14pt;
+		line-height: 20px;
+	}
+	.phones__name {
+		width: 50%;
+		text-align: left;
+	}
+	.phones__number {
+		width: 50%;
+		text-align: right;
+	}
+		/*=====================
+	======= ПОДВАЛ ======
+	=====================*/
+	/*----- Навигация подвала -----*/
+	.footer__nav {
+		display: none;	
+	}
+	.table-of-contents__link {
+		font-size: 10pt;
+		padding: 10px 30px;
+	}
+	/*----- Логотип подвала -----*/
+	.footer__logo-img {
+		width: 30px;
+	}
+	.footer-logo_top {
+		font-size: 8pt;
+	}
+	.footer-logo_center {
+		font-size: 18pt;
+	}
+	.footer-logo_bottom {
+		font-size: 10pt;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===================
+	АДАПТИВНЫЙ ДИЗАЙН ПРИ МАКСИМАЛЬНОЙ ШИРИНЕ 658 PX
+	==================*/
+
+@media screen and (max-width: 658px) {
+	.wrapper {
+		max-width: 650px;
+	}
+	.container {
+		max-width: 550px;
+	}
+	/*=================
+	 ====== ШАПКА =====
+	 =================*/
+	/*-----Секция ссылок-----*/
+	.link {
+		font-size: 8pt;
+	}
+	/*----- Секция заголовка -----*/
+	.header__caption {
+		line-height: 30px;
+		display: block;
+	}
+	.header__caption_logo {
+		width: 100%;
+		padding: 10px;
+	}
+	.logo_top {
+		font-size: 14pt;
+	}
+	.logo_center {
+		font-size: 32pt;
+	}
+	.logo_bottom {
+		font-size: 16pt;
+	}
+	/*---Форма поиска---*/
+	.header__caption_search {
+		width: 100%;
+		padding: 0 0 10px 0;
+	}
+	.search__form {
+		width: 100%;
+		margin: 0;
+	}
+	.search__input {
+		max-width: 200px;
+	}
+	.header__logo {
+		width: 50px;
+		height: 50px;
+		display: none;
+	}
+	
+	/*----- Секция навигации -----*/
+	.burger-bar {
+	    font-size: 14pt;
+	}
+	/*	======================
+	========= Контент =========
+	===========================*/
+	.content {
+		width: 100%;
+		min-height: 600px;
+	}
+	.top-content {
+		display: block;
+	}
+	/*----- Лидер -----*/
+	.leader {
+		width: 100%;
+		padding: 10px;
+	}
+	.leader_caption {
+		font-size: 20pt;
+		margin: 0;
+	}
+	.leader_description {
+		font-size: 13pt;
+		margin: 0;
+	}
+	/*----- Блок сведений -----*/
+	.intelligence {
+		width: 100%;
+		padding: 10px;
+		font-size: 14pt;
+		border-radius: 20px;
+	}
+	.intelligence__caption {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.intelligence__info {
+		width: 100%;
+		line-height: 35px;
+	}
+
+
+	/*----- ОБРАЩЕНИЯ - УСЛУГИ - НОВОСТИ -----*/
+	.content__link {
+		font-size: 16pt;
+		text-align: center;
+	}
+	.content__links {
+		padding: 10px;
+	}
+	.content__link-block {
+		margin: 0;
+	}
+	.content__news {
+		padding: 10px;	
+	}
+	.news__caption {
+		font-size: 16pt;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		margin: 0;
+	}
+	.news__info {
+		display: grid;
+		grid-template-columns: repeat(2, 45%);
+		grid-template-rows: repeat (3, auto);
+		justify-content: space-around;
+		font-size: 14pt;
+		margin: 0;
+	}
+	
+	/*----- ОБЪЯВЛЕНИЕ И ТЕЛЕФОНЫ  ------*/
+	
+	/*Объявления*/
+	.main-news {
+		padding: 10px;
+	}
+	.counter {
+		margin: 10px 0;
+	}
+	.title {
+		font-size: 22pt;
+		width: auto;
+		margin: 0 20px;
+	}
+	.title__logo {
+		width: 50px;
+	}
+	/*Экстренные телефоны*/
+	.phones__caption {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.phones__info {
+		font-size: 14pt;
+	}
+		/*=====================
+	======= ПОДВАЛ ======
+	=====================*/
+	/*----- Карта сайта -----*/
+	.table-of-contents__link {
+		padding: 10px 0;
+	}
+	/*----- Логотип подвала -----*/
+	.footer-logo__inner {
+		width: 60%;
+	}
+	.footer__logo-img {
+		width: 30px;
+	}
+	.footer-logo_top {
+		font-size: 8pt;
+	}
+	.footer-logo_center {
+		font-size: 18pt;
+	}
+	.footer-logo_bottom {
+		font-size: 10pt;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===================
+	АДАПТИВНЫЙ ДИЗАЙН ПРИ МАКСИМАЛЬНОЙ ШИРИНЕ 558 PX
+	==================*/
+
+@media screen and (max-width: 558px) {
+	.wrapper {
+		max-width: 550px;
+	}
+	.container {
+		max-width: 450px;
+	}
+
+	/*=================
+	 ====== ШАПКА =====
+	 =================*/
+
+	/*-----Секция ссылок-----*/
+	.header__links {
+		padding: 0;
+	}
+	.link {
+		display: none;
+	}
+	/*----- Секция заголовка -----*/
+	.logo_top {
+		font-size: 12pt;
+	}
+	.logo_center {
+		font-size: 28pt;
+	}
+	.logo_bottom {
+		font-size: 14pt;
+	}
+	/*---------- Menu burger ----------*/
+	.menu__close {
+		width: 30%;
+		
+	}
+	.menu__link {
+		width: 70%;
+		line-height: 30px;
+		font-size: 16pt;
+	}
+	/*	======================
+	========= Контент =========
+	===========================*/
+	
+	/*----- Блок сведений -----*/
+	.intelligence {
+		font-size: 14pt;
+	}
+	.leader_caption {
+		font-size: 20pt;
+	}
+	.leader_description {
+		font-size: 14pt;
+	}
+	.intelligence__caption {
+		display: flex;
+		flex-direction: column;
+	}
+	
+
+	/*----- Новости, Услуги, Обращения -----*/
+	.content__links {
+		padding: 0;
+	}
+	.content__link {
+		font-size: 20pt;
+		text-align: center;
+	}
+	.news__caption {
+		font-size: 16pt;
+		display: flex;
+		flex-direction: column;
+		line-height: 20px;
+		margin: 0;
+	}
+	.content__news {
+		overflow: hidden;
+	}
+	.news__info {
+		display: grid;
+		grid-template-columns: repeat(1, 90%);
+		justify-content: space-around;
+		font-size: 13pt;
+		margin: 0;
+	}
+	.news__text:first-child {
+		background-color: #fff;
+	}
+	
+	
+
+	/*----- Объявления, Экстренные Телефоны  ------*/
+	.bottom-content {
+		min-height: 300px;
+		margin: 0 0 30px 0;
+		display: block;
+	}
+	.main-news {
+		
+	}
+	.phones {
+		border-radius: 20px;
+	}
+	/*Объявления*/
+	.main-news__title {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.title__round {
+		width: 50px;
+		height: 50px;
+		font-size: 20pt;
+	}
+	.title {
+		font-size: 24pt;
+		width: auto;
+	}
+	.title__logo {
+		width: 50px;
+	}
+	.counter {	
+		margin: 20px 0;
+	}
+	.today {
+		margin: 0 20px;
+	}
+	.count {
+		margin: 0 10px;
+	}
+	.link-btn {
+		font-size: 16pt;
+		padding: 10px 30px;
+		border-radius: 20px;
+	}
+	
+	/*Экстренные телефоны*/
+	.phones__caption {
+		display: block;
+	}
+	.phones__info {
+		font-size: 14pt;
+		border-top: 1px solid #B0B0B0;
+	}
+	.phones__name {
+		width: 100%;
+	}
+	.phones__number {
+		width: 100%;
+	}
+	/*----- Логотипы ----*/
+	.logos__inner {
+		display: grid;
+		grid-template-columns: repeat(3, auto);
+		grid-template-rows: repeat(4, auto );
+	}
+	.logotype {
+		width: 70px;
+		display: block;
+		margin: 10px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===================
+	АДАПТИВНЫЙ ДИЗАЙН ПРИ МАКСИМАЛЬНОЙ ШИРИНЕ 500 PX
+	==================*/
+
+@media screen and (max-width: 500px) {
+	.wrapper {
+		max-width: 450px;
+	}
+	.container {
+		max-width: 400px;
+	}
+
+	/*=================
+	 ====== ШАПКА =====
+	 =================*/
+	/*----- Секция заголовка -----*/
+	.header__caption_logo {
+		min-height: 0;
+		padding: 0;
+		margin: 0;
+	}
+	.logo {
+		line-height: 25px;
+		min-height: 0;
+	}
+	.logo_top {
+		font-size: 10pt;
+		text-align: center;
+	}
+	.logo_center {
+		font-size: 24pt;
+	}
+	.logo_bottom {
+		font-size: 12pt;
+		text-align: center;
+	}
+
+	/*	======================
+	========= Контент =========
+	===========================*/
+	
+	/*----- Блок сведений -----*/
+	.intelligence {
+		font-size: 14pt;
+	}
+	.intelligence__info {
+		font-size: 12pt;
+	}
+	.leader_caption {
+		font-size: 17pt;
+	}
+	.leader_description {
+		font-size: 13pt;
+	}
+	.intelligence__caption {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	/*---------- Menu burger ----------*/
+	.menu__close {
+		width: 40%;
+	}
+	.menu__link {
+		width: 100%;
+		line-height: 30px;
+		font-size: 15pt;
+	}
+	/*----- Новости, Услуги, Обращения -----*/
+	.content__links {
+		padding: 0;
+		text-align: center;
+	}
+	.content__link {
+		font-size: 18pt;
+	}
+	.news__caption {
+		display: flex;
+		flex-direction: column;
+		line-height: 20px;
+		margin: 0;
+	}
+	.news__info {
+		display: grid;
+		grid-template-columns: repeat(1, 90%);
+		justify-content: space-around;
+		margin: 0;
+	}
+
+	/*----- Объявления, Экстренные Телефоны  ------*/
+	.bottom-content {
+		min-height: 300px;
+		margin: 0 0 30px 0;
+		display: block;
+	}
+	.phones {
+		border-radius: 20px;
+	}
+	/*Объявления*/
+	.main-news__title {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.title__round {
+		display: none;
+		width: 50px;
+		height: 50px;
+		font-size: 20pt;
+	}
+	.title {
+		font-size: 22pt;
+		width: auto;
+	}
+	.title__logo {
+		width: 40px;
+	}
+	.link-btn {
+		font-size: 16pt;
+		padding: 10px 30px;
+		border-radius: 30px;
+	}
+	
+	/*Экстренные телефоны*/
+	.phones__caption {
+		display: block;
+	}
+	.phones__info {
+		font-size: 12pt;
+	}
+	/*----- Логотипы ----*/
+	.logotype {
+		width: 50px;
+		margin: 10px;
+	}
+		/*=====================
+	======= ПОДВАЛ ======
+	=====================*/
+	.logos__inner {
+		display: grid;
+		grid-template-columns: repeat(3, auto);
+		grid-template-rows: repeat(4, auto);
+	}
+	.table-of-contents {
+		margin: 10px 0;
+		font-size: 10pt;
+	}
+	/*----- Логотип подвала -----*/
+	.footer-logo__inner {
+		width: 100%;
+		padding: 0;
+	}
+	.footer__logo-title {
+		margin: 10px auto;
+		width: 90%;
+	}
+	.footer__inner {
+		min-height: 100px;
+	}
+	.footer {
+		min-height: 100px;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===================
+	АДАПТИВНЫЙ ДИЗАЙН ПРИ МАКСИМАЛЬНОЙ ШИРИНЕ 400 PX
+	==================*/
+
+@media screen and (max-width: 400px) {
+	.wrapper {
+		max-width: 400px;
+	}
+	.container {
+		max-width: 350px;
+	}
+
+	/*=================
+	 ====== ШАПКА =====
+	 =================*/
+
+	/*----- Секция заголовка -----*/
+	.logo_top {
+		font-size: 10pt;
+	}
+	.logo_center {
+		font-size: 22pt;
+	}
+	.logo_bottom {
+		font-size: 11pt;
+	}
+	/*---------- Menu burger ----------*/
+	.menu__close {
+		width: 60%;
+	}
+	.menu__link {
+		width: 100%;
+		line-height: 30px;
+		font-size: 14pt;
+	}
+	/*	======================
+	========= Контент =========
+	===========================*/
+	
+	/*----- Блок сведений -----*/
+	.intelligence {
+		font-size: 14pt;
+	}
+	.leader_caption {
+		font-size: 15pt;
+	}
+	.leader_description {
+		font-size: 11pt;
+	}
+	.intelligence__caption {
+		display: flex;
+		flex-direction: column;
+	}
+	
+
+	/*----- Новости, Услуги, Обращения -----*/
+	.content__links {
+		padding: 0;
+		text-align: center;
+	}
+	.content__link {
+		font-size: 20px;
+	}
+	.news__caption {
+		font-size: 16pt;
+		display: flex;
+		flex-direction: column;
+		line-height: 20px;
+		margin: 0;
+	}
+	.news__info {
+		display: grid;
+		grid-template-columns: repeat(1, auto);
+		justify-content: space-around;
+		font-size: 14pt;
+		margin: 0;
+	}
+	/*----- Объявления, Экстренные Телефоны  ------*/
+	.bottom-content {
+		min-height: 300px;
+		margin: 0 0 30px 0;
+		display: block;
+	}
+	.main-news {
+		
+	}
+	.phones {
+		border-radius: 20px;
+	}
+	/*Объявления*/
+	.main-news__title {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.title__round {
+		display: none;
+		width: 50px;
+		height: 50px;
+		font-size: 20pt;
+	}
+	.title {
+		font-size: 20pt;
+		width: auto;
+	}
+	.title__logo {
+		width: 40px;
+	}
+	.link-btn {
+		font-size: 16pt;
+		padding: 10px 30px;
+		border-radius: 20px;
+	}
+	
+	/*Экстренные телефоны*/
+	.phones__caption {
+		display: block;
+	}
+	/*----- Логотипы ----*/
+	.logos__inner {
+		min-height: 100px;
+		padding: 10px;
+	}
+	.logotype {
+		width: 50px;
+		display: block;
+		margin: 10px;
+	}
+		/*=====================
+	======= ПОДВАЛ ======
+	=====================*/
+	.table-of-contents__link {
+		font-size: 10pt;
+	}
+	.logos__inner {
+		display: grid;
+		grid-template-columns: repeat(3, auto);
+		grid-template-rows: repeat(4, auto);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===================
+	АДАПТИВНЫЙ ДИЗАЙН ПРИ МАКСИМАЛЬНОЙ ШИРИНЕ 359 PX
+	==================*/
+
+@media screen and (max-width: 359px) {
+	.wrapper {
+		max-width: 350px;
+	}
+	.container {
+		max-width: 300px;
+	}
+
+	/*=================
+	 ====== ШАПКА =====
+	 =================*/
+
+	/*-----Секция ссылок-----*/
+	.link {
+		font-size: auto;
+		width: 100%;
+	}
+	/*----- Секция заголовка -----*/
+	.header__caption_logo {
+		padding: 0;
+	}
+	.logo {
+		line-height: 20px;
+	}
+	.logo_top {
+		font-size: 8pt;
+	}
+	.logo_center {
+		font-size: 18pt;
+	}
+	.logo_bottom {
+		font-size: 9pt;
+	}
+
+	/*	======================
+	========= Контент =========
+	===========================*/
+	
+	/*----- Блок сведений -----*/
+	.intelligence {
+		font-size: 14pt;
+	}
+	.leader_caption {
+		font-size: 13pt;
+	}
+	.leader_description {
+		font-size: 10pt;
+	}
+	.intelligence__caption {
+		display: flex;
+		flex-direction: column;
+	}
+	/*----- Новости, Услуги, Обращения -----*/
+	.content__links {
+		padding: 0;
+		text-align: center;
+	}
+	.content__link {
+		font-size: 18px;
+		padding: 0;
+		margin: 0;
+	}
+	.news__caption {
+		font-size: 14pt;
+	}
+	.news__info {
+		display: grid;
+		grid-template-columns: repeat(1, auto);
+		justify-content: space-around;
+		font-size: 14pt;
+		margin: 0;
+	}
+
+	/*----- Объявления, Экстренные Телефоны  ------*/
+	.bottom-content {
+		min-height: 300px;
+		margin: 0 0 30px 0;
+		display: block;
+	}
+	/*Объявления*/
+	.main-news__title {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.title {
+		font-size: 16pt;
+		width: auto;
+	}
+	.title__logo {
+		width: 30px;
+	}
+	.link-btn {
+		font-size: 14pt;
+		padding: 10px 30px;
+		border-radius: 20px;
+	}
+	
+	/*Экстренные телефоны*/
+
+	.phones__name {
+		width: 100%;
+		text-align: left;
+	}
+	.phones__number {
+		width: 100%;
+		text-align: right;
+	}
+	/*----- Логотипы ----*/
+	.logos__inner {
+		min-height: 100px;
+		padding: 10px;
+	}
+	.logotype {
+		width: 50px;
+		margin: 10px;
+		display: block;
+	}
+		/*=====================
+	======= ПОДВАЛ ======
+	=====================*/
+	.table-of-contents__link {
+		font-size: 7pt;
+	}
+	.table-of-contents {
+		margin: 10px 0;
+	}
+	.logos__inner {
+		display: grid;
+		grid-template-columns: repeat(3, auto);
+		grid-template-rows: repeat(4, auto );
+	}
+	.footer__logo-title {
+		padding: 0;
+	}
+	.footer-logo_top {
+		font-size: 10px;
+		padding: 0;
+		margin: 0;
+		text-align: center;
+	}
+	.footer-logo_center {
+		font-size: 22px;
+	}
+	.footer-logo_bottom {
+		font-size: 10px;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 300px) {
+	.wrapper {
+		max-width: 300px;
+	}
+	.container {
+		max-width: 280px;
+	}
+	.table-of-contents__link {
+		font-size: 6pt;
+	}
+	.content__link {
+		font-size: 16px;
+	}
+	.menu__close {
+		font-size: 12pt;
+	}
+	.menu__link {
+		font-size: 12pt;
+	}
+}
